@@ -19,7 +19,7 @@ export class BonbonComponent {
     this.description = 'Commander les bonbons de votre enfance ';
     this.createdDate = new Date();
     this.snaps = 67659;
-    this.imageUrl = 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg';
+    this.imageUrl = 'https://www.miage.fr/wp-content/uploads/2021/01/MIAGE_LOGO_CMJN_TOULOUSE-scaled.jpg';
     this.buttonText = 'Click';
     
     

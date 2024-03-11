@@ -3,7 +3,7 @@
 <div class="face-snap-card">
     <h2>{{ title }}</h2>
     <p>Mis en ligne le {{ createdDate }}</p>
-    <img [src]="imageUrl" [alt]="title">
+    <img [src]="imageUrl" [alt]="title" width=20% height=20%>
     <p>{{ description }}</p>
     <p>Nombre de commande passées sur le site :{{ snaps }}</p>
     <button (click)="onSnap()">{{ buttonText }}</button>
