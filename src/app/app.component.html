@@ -1,16 +1,9 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-
-    <title>RecruitMIAGE</title>
-
-  </head>
-
+  <app-bonbon></app-bonbon>
+  
   <body>
-    <header>
-      <h1>RecruitMIAGE</h1>
-    </header>
+    
 
     <nav>
       <ul>
@@ -19,21 +12,86 @@
         <li><a href="#">Projets</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+      <!-- app.component.html -->
 
-      <!-- Un formulaire de recherche est une autre façon de naviguer de
-            façon non‑linéaire dans un site. -->
+<div class="mycharts-heading ">
+  <div><button type="button" id="b1" class="btn btn-primary" (click)="openPopup()"><i class="fas fa-exchange-alt fa-rotate-90">Créer un projet</i></button></div>
+</div>
 
-      <form>
-      
-        <button routerLink="/urlVersLaNouvellePage" class="btn">Créer un projet</button>
-      </form>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Titre du popup</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Contenu du popup
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+            
     </nav>
 
-    <!-- Ici nous mettons le contenu de la page -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets</title>
+    </head>
+    <body>
+        <!-- Conteneur des rectangles -->
+        <div class="projects-container">
+            <!-- Premier projet -->
+            <div class="rectangle">
+                <h3>Projet 1 : Les chèvres en espagne</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
+                  lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
+                  viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
+                  et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
+                  congue enim, ut porta lorem lacinia consectetur.</p>
+            </div>
+    
+            <!-- Deuxième projet -->
+            <div class="rectangle">
+                <h3>Projet 2</h3>
+                <p>Description du projet 2</p>
+            </div>
+    
+            <!-- Troisième projet -->
+            <div class="rectangle">
+                <h3>Projet 3</h3>
+                <p>Description du projet 3</p>
+            </div>
+    
+            <!-- Quatrième projet -->
+            <div class="rectangle">
+                <h3>Projet 4</h3>
+                <p>Description du projet 4</p>
+            </div>
+    
+            <!-- Cinquième projet -->
+            <div class="rectangle">
+                <h3>Projet 5</h3>
+                <p>Description du projet 5</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
     <main>
       <!-- Il contient un article -->
       <article>
-        <app-bonbon></app-bonbon>
+        
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
           lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam

@@ -1,0 +1,29 @@
+.center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mycharts-heading {
+    padding: 10px 15px 10px 15px;
+    border-bottom: 1px solid transparent;
+    /*Bleu : #428bca*/
+}
+ 
+.element-head {
+    display: block;
+    right: 10px;
+    top: 0;
+    position: absolute ;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.rectangle {
+    width: 1000px; /* Largeur du rectangle */
+    height: 100px; /* Hauteur du rectangle */
+    background-color: #fdfdfd; /* Couleur de fond */
+    border: 1px solid #030109; /* Bordure */
+    margin: 20px; /* Marge autour du rectangle */
+    display: table; /* Affichage en ligne */
+    vertical-align: top; /* Alignement vertical en haut */
+}

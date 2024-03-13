@@ -15,7 +15,7 @@ export class BonbonComponent {
   buttonText!: string;
 
   ngOnInit() {
-    this.title = 'Bonbon';
+    this.title = 'RecruitMIAGE';
     this.description = 'Commander les bonbons de votre enfance ';
     this.createdDate = new Date();
     this.snaps = 67659;

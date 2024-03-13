@@ -3,4 +3,15 @@
   img {
     width: 100%;
   }
+  
+}
+
+img:not(.plus) {
+  position: relative;
+  left: 88%;
+  transform: translateX(-50%)
+}
+.center {
+  display: flex;
+  justify-content: center;
 }
