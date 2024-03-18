@@ -1,64 +1,88 @@
-<!doctype html>
-<html>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Création d'un projet</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+      <form>
+          <div class="mb-3">
+              <label for="projectName" class="form-label">Nom du projet</label>
+              <input type="text" class="form-control" id="projectName" placeholder="Entrez le nom du projet">
+          </div>
+          <div class="mb-3">
+              <label for="projectDescription" class="form-label">Description du projet</label>
+              <textarea class="form-control" id="projectDescription" rows="3" placeholder="Entrez la description du projet"></textarea>
+          </div>
+          <div class="mb-3">
+              <label for="membersCount" class="form-label">Nombre de membres à recruter</label>
+              <input type="number" class="form-control" id="membersCount" placeholder="Entrez le nombre de membres à recruter">
+          </div>
+      </form>
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Enregistrer</button>
+  </div>
+</ng-template>
+
+<ng-template #content2 let-modal>
+  <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Détail du projet</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+        <div class="mb-3">
+            <label for="projectName" class="font-weight-bold">Nom du projet :</label>
+
+            <p class="font-weight-normal">Les chèvres en espagne</p>
+        </div>
+        <div class="mb-3">
+            <label for="projectDescription" class="font-weight-bold">Description du projet :</label>
+
+            <p class="font-weight-normal">Les chèvres en espagne les dramas</p>
+        </div>
+        <div class="mb-3">
+          <label for="membersCount" class="font-weight-bold">Nombre de membres à recruter :</label>
+
+          <p class="font-weight-normal">9</p>
+        </div>
+    </form>
+</div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Enregistrer</button>
+  </div>
+</ng-template>
+
+
+
+
+
   <app-bonbon></app-bonbon>
   
-  <body>
     
 
     <nav>
       <ul>
         <li><a href="#">Accueil</a></li>
-        <li><a href="#">L'équipe</a></li>
         <li><a href="#">Projets</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <!-- app.component.html -->
 
 <div class="mycharts-heading ">
-  <div><button type="button" id="b1" class="btn btn-primary" (click)="openPopup()"><i class="fas fa-exchange-alt fa-rotate-90">Créer un projet</i></button></div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Titre du popup</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Contenu du popup
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-        <button type="button" class="btn btn-primary">Enregistrer</button>
-      </div>
-    </div>
-  </div>
+  <div><button type="button" id="b1" class="btn btn-primary"  (click)="open(content)"><i class="fas fa-exchange-alt fa-rotate-90">Créer un projet</i></button></div>
 </div>
             
     </nav>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets</title>
-    </head>
-    <body>
-        <!-- Conteneur des rectangles -->
         <div class="projects-container">
-            <!-- Premier projet -->
             <div class="rectangle">
-                <h3>Projet 1 : Les chèvres en espagne</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
-                  lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
-                  viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
-                  et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
-                  congue enim, ut porta lorem lacinia consectetur.</p>
+                <h3>Projet 1 </h3>
+                <div class="mycharts-heading ">
+                  <div><button type="button" id="b2" class="btn btn-link"  (click)="open(content2)"><i class="fas fa-exchange-alt fa-rotate-90">Détail du projet</i></button></div>
+                </div>
+                
             </div>
     
             <!-- Deuxième projet -->
@@ -85,8 +109,6 @@
                 <p>Description du projet 5</p>
             </div>
         </div>
-    </body>
-    </html>
     
     <main>
       <!-- Il contient un article -->
@@ -113,5 +135,3 @@
     <footer>
       <p>©Copyright 2050 par personne. Tous droits reversés.</p>
     </footer>
-  </body>
-</html>
