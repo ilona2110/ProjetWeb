@@ -1,9 +1,10 @@
 import { Component, TemplateRef, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { BonbonComponent } from './bonbon/bonbon.component';
+import { LoginComponent } from './login/login.component';
 import { ModalDismissReasons, NgbDatepickerModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
-
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -56,6 +57,8 @@ open(content: TemplateRef<any>) {
 				return `with: ${reason}`;
 		}
 	}
+  
+  
   
   
   

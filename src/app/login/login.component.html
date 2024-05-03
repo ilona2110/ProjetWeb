@@ -1,17 +1,15 @@
-<p>login works!</p>
-<!-- login.component.html -->
-<div class="container">
-    <h2 class="mt-5 mb-4">Connexion</h2>
-    <form>
-      <div class="mb-3">
-        <label for="inputEmail" class="form-label">Adresse email</label>
-        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="inputPassword" class="form-label">Mot de passe</label>
-        <input type="password" class="form-control" id="inputPassword">
-      </div>
-      <button type="submit" class="btn btn-primary">Se connecter</button>
-    </form>
-  </div>
-  
+<div class="form_container">
+  <form>
+    <div class="group">
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email">
+    </div>
+    <div class="group">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+    </div>
+    <div class="group">
+      <button>Login</button>
+    </div>
+  </form>
+</div>
